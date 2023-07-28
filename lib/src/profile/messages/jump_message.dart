@@ -134,7 +134,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Returns the value of the distance field. Returns null if the field is not defined in the message.
-  int? get distance {
+  double? get distance {
     final field = getField(JumpDistanceField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -145,7 +145,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Sets the distance field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set distance(int? value) {
+  set distance(double? value) {
     final field = getField(JumpDistanceField.ID);
 
     if (field != null) {
@@ -161,7 +161,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Returns the value of the height field. Returns null if the field is not defined in the message.
-  int? get height {
+  double? get height {
     final field = getField(JumpHeightField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -172,7 +172,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Sets the height field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set height(int? value) {
+  set height(double? value) {
     final field = getField(JumpHeightField.ID);
 
     if (field != null) {
@@ -215,7 +215,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Returns the value of the hangTime field. Returns null if the field is not defined in the message.
-  int? get hangTime {
+  double? get hangTime {
     final field = getField(JumpHangTimeField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -226,7 +226,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Sets the hangTime field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set hangTime(int? value) {
+  set hangTime(double? value) {
     final field = getField(JumpHangTimeField.ID);
 
     if (field != null) {
@@ -242,7 +242,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Returns the value of the score field. Returns null if the field is not defined in the message.
-  int? get score {
+  double? get score {
     final field = getField(JumpScoreField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -253,7 +253,7 @@ class JumpMessage extends DataMessage {
   }
 
   /// Sets the score field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set score(int? value) {
+  set score(double? value) {
     final field = getField(JumpScoreField.ID);
 
     if (field != null) {
