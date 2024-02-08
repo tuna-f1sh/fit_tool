@@ -4233,7 +4233,7 @@ class SessionMessage extends DataMessage {
   }
 
   /// Returns the value of the totalGrit field. Returns null if the field is not defined in the message.
-  int? get totalGrit {
+  double? get totalGrit {
     final field = getField(SessionTotalGritField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -4244,7 +4244,7 @@ class SessionMessage extends DataMessage {
   }
 
   /// Sets the totalGrit field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set totalGrit(int? value) {
+  set totalGrit(double? value) {
     final field = getField(SessionTotalGritField.ID);
 
     if (field != null) {
@@ -4260,7 +4260,7 @@ class SessionMessage extends DataMessage {
   }
 
   /// Returns the value of the totalFlow field. Returns null if the field is not defined in the message.
-  int? get totalFlow {
+  double? get totalFlow {
     final field = getField(SessionTotalFlowField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -4271,7 +4271,7 @@ class SessionMessage extends DataMessage {
   }
 
   /// Sets the totalFlow field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set totalFlow(int? value) {
+  set totalFlow(double? value) {
     final field = getField(SessionTotalFlowField.ID);
 
     if (field != null) {

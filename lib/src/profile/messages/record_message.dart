@@ -2318,7 +2318,7 @@ class RecordMessage extends DataMessage {
   }
 
   /// Returns the value of the grit field. Returns null if the field is not defined in the message.
-  int? get grit {
+  double? get grit {
     final field = getField(RecordGritField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -2329,7 +2329,7 @@ class RecordMessage extends DataMessage {
   }
 
   /// Sets the grit field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set grit(int? value) {
+  set grit(double? value) {
     final field = getField(RecordGritField.ID);
 
     if (field != null) {
@@ -2345,7 +2345,7 @@ class RecordMessage extends DataMessage {
   }
 
   /// Returns the value of the flow field. Returns null if the field is not defined in the message.
-  int? get flow {
+  double? get flow {
     final field = getField(RecordFlowField.ID);
     if (field != null && field.isValid()) {
       var subField = field.getValidSubField(fields);
@@ -2356,7 +2356,7 @@ class RecordMessage extends DataMessage {
   }
 
   /// Sets the flow field with [value]. Throws [FieldNotDefinedError] if the field is not defined in the message.
-  set flow(int? value) {
+  set flow(double? value) {
     final field = getField(RecordFlowField.ID);
 
     if (field != null) {
